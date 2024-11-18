@@ -1,0 +1,19 @@
+[package]
+name = "proximity-sort"
+version = "1.3.0"
+authors = ["Jon Gjengset <jon@thesquareplanet.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+readme = "README.md"
+description = "Simple command-line utility for sorting inputs by proximity to a path argument"
+repository = "https://github.com/jonhoo/proximity-sort.git"
+
+keywords = ["cli", "pipe", "filter", "utility"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+
+[profile.release]
+lto = "yes"
+codegen-units = 1
